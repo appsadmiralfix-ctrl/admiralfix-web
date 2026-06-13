@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página no encontrada — AdmiralFix</title>
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="favicon.png" sizes="any">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="preload" href="fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:300 700;font-display:swap;src:url('fonts/SpaceGrotesk.woff2') format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;font-display:swap;src:url('fonts/DMSans.woff2') format('woff2')}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:#0B1B3A;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;position:relative;padding:24px}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(107,140,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(107,140,255,.06) 1px,transparent 1px);background-size:44px 44px}
+.orb{position:absolute;top:-20%;right:-10%;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(30,66,189,.25),transparent 65%)}
+.box{position:relative;z-index:2;max-width:480px}
+.code{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:6rem;line-height:1;background:linear-gradient(135deg,#6B8CFF,#A8BFFF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.6rem;margin-bottom:14px}
+p{color:#9198AD;font-size:1rem;line-height:1.6;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-weight:600;font-size:.92rem;text-decoration:none;color:#fff;background:linear-gradient(135deg,#1E42BD,#3361FF 55%,#5B7EFF);border:1px solid rgba(107,140,255,.45);box-shadow:0 6px 24px rgba(30,66,189,.32),inset 0 1px 0 rgba(255,255,255,.18);transition:all .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(30,66,189,.44)}
+</style>
+<script>
+(function(){
+  function loadGA(){
+    if(window.__gaLoaded)return;window.__gaLoaded=true;
+    var s=document.createElement("script");s.async=true;
+    s.src="https://www.googletagmanager.com/gtag/js?id=G-502D43YNR4";
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){dataLayer.push(arguments);};
+    gtag("js",new Date());gtag("config","G-502D43YNR4");
+  }
+  window.__loadGA=loadGA;
+  try{if(localStorage.getItem("af_consent")==="granted")loadGA();}catch(_){}
+  document.addEventListener("af-consent",loadGA);
+})();
+</script>
+</head>
+<body>
+<div class="grid"></div><div class="orb"></div>
+<div class="box">
+  <div class="code">404</div>
+  <h1>Esta página no existe</h1>
+  <p>Puede que el enlace esté roto o que la página se haya movido. Vamos a llevarte de vuelta a un sitio seguro.</p>
+  <a href="index.html" class="btn">Volver al inicio</a>
+</div>
+</body></html>
